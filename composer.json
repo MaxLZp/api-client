@@ -1,0 +1,11 @@
+{
+    "name": "maxlzp/api-client",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Maxim Linenko",
+            "email": "linenko.maxim@gmail.com"
+        }
+    ],
+    "require": {}
+}
