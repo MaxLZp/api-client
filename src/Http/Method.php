@@ -1,4 +1,4 @@
-<?
+<?php
 namespace MaxLZp\ApiClient\Http;
 
 class Method

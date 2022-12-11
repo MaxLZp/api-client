@@ -1,4 +1,4 @@
-<?
+<?php
 namespace  MaxLZp\ApiClient\Log;
 
 use Psr\Log\LogLevel;

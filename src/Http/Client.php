@@ -1,13 +1,13 @@
-<?
+<?php
 namespace MaxLZp\ApiClient\Http;
 
 use GuzzleHttp\Psr7\Message;
-use GuzzleHttp\Client as GuzzleClient;
-use GuzzleHttp\Exception\RequestException;
-use MaxLZp\ApiClient\Log\NullLogger;
 use Psr\Log\LoggerInterface;
+use MaxLZp\ApiClient\Log\NullLogger;
+use GuzzleHttp\Client as GuzzleClient;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
+use GuzzleHttp\Exception\RequestException;
 
 class Client
 {

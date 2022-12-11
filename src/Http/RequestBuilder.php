@@ -1,8 +1,8 @@
-<?
+<?php
 namespace MaxLZp\ApiClient\Http;
 
-use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Uri;
+use GuzzleHttp\Psr7\Request;
 use Psr\Http\Message\RequestInterface;
 
 abstract class RequestBuilder

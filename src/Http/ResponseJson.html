@@ -1,4 +1,4 @@
-<?
+<?php
 namespace MaxLZp\ApiClient\Http;
 
 use Psr\Http\Message\ResponseInterface;

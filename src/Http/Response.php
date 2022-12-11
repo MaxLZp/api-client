@@ -1,4 +1,4 @@
-<?
+<?php
 namespace MaxLZp\ApiClient\Http;
 
 use Psr\Http\Message\ResponseInterface;
@@ -59,5 +59,4 @@ abstract class Response implements \ArrayAccess
     {
         return isset($this->response[$offset]) ? $this->response[$offset] : null;
     }
-
 }
