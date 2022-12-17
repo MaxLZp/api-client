@@ -50,7 +50,9 @@ class Client
 
     protected function onAfterSend(ResponseInterface $response): void
     {
+        $response->getBody()->rewind();
         $this->logger->debug(Message::toString($response));
+        $response->getBody()->rewind();
     }
 
     protected function onBeforeSend(RequestInterface $request): void
