@@ -1,5 +1,5 @@
 <?php
-namespace MaxLZp\ApiClient\Http;
+namespace Maxlzp\ApiClient\Http;
 
 use Psr\Http\Message\ResponseInterface;
 

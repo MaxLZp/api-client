@@ -1,5 +1,5 @@
 <?php
-namespace MaxLZp\ApiClient\Http;
+namespace Maxlzp\ApiClient\Http;
 
 use GuzzleHttp\Psr7\Uri;
 use GuzzleHttp\Psr7\Request;

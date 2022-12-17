@@ -1,9 +1,9 @@
 <?php
-namespace MaxLZp\ApiClient\Http;
+namespace Maxlzp\ApiClient\Http;
 
 use GuzzleHttp\Psr7\Message;
 use Psr\Log\LoggerInterface;
-use MaxLZp\ApiClient\Log\NullLogger;
+use Maxlzp\ApiClient\Log\NullLogger;
 use GuzzleHttp\Client as GuzzleClient;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

@@ -1,5 +1,5 @@
 <?php
-namespace  MaxLZp\ApiClient\Log;
+namespace  Maxlzp\ApiClient\Log;
 
 class NullLogger extends Logger
 {

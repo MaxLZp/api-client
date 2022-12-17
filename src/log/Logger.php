@@ -1,5 +1,5 @@
 <?php
-namespace  MaxLZp\ApiClient\Log;
+namespace  Maxlzp\ApiClient\Log;
 
 use Psr\Log\LogLevel;
 use Psr\Log\LoggerInterface;
