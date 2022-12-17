@@ -14,6 +14,7 @@ abstract class Response implements \ArrayAccess
     {
         $this->statusCode = $response->getStatusCode();
         $this->response = $this->buildResponseArray($response);
+        $response->getBody()->rewind();
     }
 
     public static function json(ResponseInterface $response): self
@@ -36,7 +37,7 @@ abstract class Response implements \ArrayAccess
         return $this->statusCode;
     }
 
-    public function offsetSet(mixed $offset, mixed $value): void
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             $this->response[] = $value;
@@ -45,17 +46,17 @@ abstract class Response implements \ArrayAccess
         }
     }
 
-    public function offsetExists(mixed $offset): bool
+    public function offsetExists($offset): bool
     {
         return isset($this->response[$offset]);
     }
 
-    public function offsetUnset(mixed $offset): void
+    public function offsetUnset($offset): void
     {
         unset($this->response[$offset]);
     }
 
-    public function offsetGet(mixed $offset): mixed
+    public function offsetGet($offset)
     {
         return isset($this->response[$offset]) ? $this->response[$offset] : null;
     }
