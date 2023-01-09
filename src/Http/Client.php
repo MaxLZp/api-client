@@ -15,15 +15,20 @@ class Client
     protected GuzzleClient $client;
     protected LoggerInterface $logger;
 
-    public function __construct(array $config, LoggerInterface $logger = null)
+    /**
+     * @param array{
+     *      base_uri: "dfghdfghdfgh",
+     * } $config
+     */
+    public function __construct($config, LoggerInterface $logger = null)
     {
         if (! $logger) {
             $this->logger = NullLogger::create();
         }
 
-        $config = array_merge(array(
+        $config = array_merge([
             'base_uri' => $this->baseUri,
-        ), $config);
+        ], $config);
 
         $this->client = new GuzzleClient($config);
     }
@@ -58,5 +63,19 @@ class Client
     protected function onBeforeSend(RequestInterface $request): void
     {
         $this->logger->debug(Message::toString($request));
+    }
+
+    /**
+     * Undocumented function
+     *
+     * @param array{
+     *  airline: 'AA',
+     *  flightnumer: '123',
+     * } $args
+     * @return void
+     */
+    protected function methodName($args): void
+    {
+        echo $args;
     }
 }
